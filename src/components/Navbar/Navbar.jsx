@@ -1,8 +1,18 @@
 import { ShoppingCart } from "lucide-react";
 import Logo from "../../assets/Logo.png";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import { HiMenuAlt1, HiMenuAlt3 } from "react-icons/hi";
+import ResponsiveMenu from "./ResponsiveMenu";
 
 const Navbar = () => {
+
+  const [showMenu, setShowMenu] = useState(false)
+
+  const togleMenu = () => {
+    setShowMenu(!showMenu)
+  }
+
   return (
     <div className="bg-white px-4 fixed w-full z-50 shadow-sm top-0 shadow-gray-400">
       <div className="max-w-7xl mx-auto py-2 px-5 flex justify-between items-center">
@@ -21,8 +31,15 @@ const Navbar = () => {
             <ShoppingCart/>
             <div className="bg-red-500 w-5 absolute -top-3 right-1 flex items-center justify-center rounded-full text-white">0</div>
           </Link>
+          {/* hamburger Menu */}
+          {showMenu ? (
+            <HiMenuAlt1 onClick={togleMenu} className="cursor-pointer  transition-all md:hidden" size={30}/>
+          ) : (
+            <HiMenuAlt3 onClick={togleMenu} className="cursor-pointer  transition-all md:hidden" size={30}/>
+          )}
         </div>
       </div>
+      <ResponsiveMenu showMenu={showMenu} setShowMenu={setShowMenu}/>
     </div>
   )
 }
