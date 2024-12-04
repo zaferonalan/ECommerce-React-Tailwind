@@ -1,4 +1,5 @@
 import HeroBanner from "../HeroBanner"
+import MidBanner from "../MidBanner"
 import MultiBanner from "../MultiBanner"
 import NewCollection from "../NewCollection"
 
@@ -8,6 +9,7 @@ const Home = () => {
       <HeroBanner/>
       <MultiBanner/>
       <NewCollection/>
+      <MidBanner/>
     </>
   )
 }
