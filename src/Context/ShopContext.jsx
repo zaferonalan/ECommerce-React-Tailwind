@@ -1,6 +1,6 @@
 import { createContext } from 'react'
-import allProduct from '../../data/AllProduct'
-import newCollection from '../../data/NewCollection'
+import allProduct from '../data/AllProduct'
+import newCollection from '../data/NewCollection'
 
 export const Shopcontext = createContext(null)
 

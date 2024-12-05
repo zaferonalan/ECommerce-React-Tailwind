@@ -2,7 +2,7 @@ import { useShopContext } from "../hooks/shopHooks";
 import Item from "./Item";
 
 const NewCollection = () => {
-  const {newCollection,}= useShopContext()
+  const { newCollection }= useShopContext()
   return (
     <div className="mx-auto max-w-2xl px-4 py-16 sm:pt-24 lg:max-w-7xl lg:px-8">
       <h2 className="text-4xl font-bold tracking-tight text-gray-900 text-center font-serif">New Collection</h2>
