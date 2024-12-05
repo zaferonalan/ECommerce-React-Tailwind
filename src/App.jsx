@@ -1,11 +1,11 @@
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar"
-import Home from "./components/Pages/Home";
-import Mens from "./components/Pages/Mens";
-import Womens from "./components/Pages/Womens";
-import Kids from "./components/Pages/Kids";
-import Login from "./components/Pages/Login";
-import Cart from "./components/Pages/Cart";
+import Home from "./Pages/Home";
+import Mens from "./Pages/Mens";
+import Womens from "./Pages/Womens";
+import Kids from "./Pages/Kids";
+import Login from "./Pages/Login";
+import Cart from "./Pages/Cart";
 
 
 const Layout = () => {
