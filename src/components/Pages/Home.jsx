@@ -2,6 +2,7 @@ import HeroBanner from "../HeroBanner"
 import MidBanner from "../MidBanner"
 import MultiBanner from "../MultiBanner"
 import NewCollection from "../NewCollection"
+import TopSellers from "../TopSellers"
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <MultiBanner/>
       <NewCollection/>
       <MidBanner/>
+      <TopSellers/>
     </>
   )
 }
