@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <div className="bg-white px-4 fixed w-full z-50 shadow-sm top-0 shadow-gray-400">
-      <div className="max-w-7xl mx-auto py-2 px-5 flex justify-between items-center">
+      <div className="max-w-screen-2xl mx-auto py-2 px-5 flex justify-between items-center">
         <img src={Logo} alt="" className="md:w-24 w-20" />
         <div className="flex items-center gap-5">
           <nav className="hidden md:block">
