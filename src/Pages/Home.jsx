@@ -1,5 +1,4 @@
 import Features from "../components/Features"
-import Footer from "../components/Footer"
 import HeroBanner from "../components/HeroBanner"
 import MidBanner from "../components/MidBanner"
 import MultiBanner from "../components/MultiBanner"
@@ -15,7 +14,6 @@ const Home = () => {
       <MidBanner/>
       <TopSellers/>
       <Features/>
-      <Footer/>
     </>
   )
 }

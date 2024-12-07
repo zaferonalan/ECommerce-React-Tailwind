@@ -6,6 +6,8 @@ import Womens from "./Pages/Womens";
 import Kids from "./Pages/Kids";
 import Login from "./Pages/Login";
 import Cart from "./Pages/Cart";
+import Footer from "./components/Footer";
+import SingleProduct from "./components/SingleProduct";
 
 
 const Layout = () => {
@@ -13,6 +15,7 @@ const Layout = () => {
     <>
       <Navbar/>
       <Outlet/>
+      <Footer/>
     </>
   )
 }
@@ -28,6 +31,7 @@ const router = createBrowserRouter([
       { path: "/kids", element:<Kids/> },
       { path: "/login", element:<Login/> },
       { path: "/cart", element:<Cart/> },
+      { path: "/products/:productId", element:<SingleProduct/> },
     ]
   }
 ])
