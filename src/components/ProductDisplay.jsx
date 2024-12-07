@@ -46,7 +46,7 @@ const ProductDisplay = (props) => {
             <div className="border bg-gray-100 p-4">XXL</div>
           </div>
         </div>
-        <Link>
+        <Link to="/cart">
           <button className="bg-red-500 text-white px-6 py-3 my-4 w-max">ADD TO CART</button>
         </Link>
         <p><span className="font-semibold">Category: </span>Women, T-shirt, Crop top</p>
