@@ -1,7 +1,11 @@
 
 const Cart = () => {
   return (
-    <div>Cart</div>
+    <div className="mt-32">
+      <div className="max-w-7xl mx-auto my-10 p-4">
+
+      </div>
+    </div>
   )
 }
 
